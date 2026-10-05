@@ -194,24 +194,7 @@ excluded from ML features, reporting-only.
   payers — acknowledged, partially offset by walk-forward evaluation.
 - **No partial payments** — invoices are all-or-nothing; real collections aren't.
 
-## 7. How to run
 
-```bash
-pip install -r requirements.txt
-# Option A — the notebook (start here):
-#   open ar_collections_analysis.ipynb — 105 cells, 84 small code cells, fully executed
-# Option B — standalone scripts, in order:
-python ar_step1_dataset.py    # generate the ledger (or skip: data/ is included)
-python ar_step2_eda.py
-python ar_step3_features.py
-python ar_step4_targets.py
-python ar_step5_baselines.py
-python ar_step6_ml.py
-python ar_step7_calibration.py
-python ar_step8_cash_at_risk.py
-python ar_step9_retro.py
-python ar_step10_shap.py
-python ar_step11_sql.py
 ```
 
 ## 8. Project structure
