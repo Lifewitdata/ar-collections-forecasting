@@ -214,9 +214,4 @@ ar-collections-forecasting/
 
 Python · pandas · LightGBM · scikit-learn · SHAP · matplotlib · SQLite
 
-## 10. Resume block — October 2026
 
-- Built invoice-level late-payment forecasting on 10.8k-invoice AR ledger: LightGBM classifier (ROC-AUC 0.66, PR-AUC 0.83) and days-to-pay regressor (MAE 15.4 days), beating segment-rule baselines; kept an honest model comparison where regularized LogReg ranked best (0.69)
-- Calibrated probabilities with Platt scaling (ECE halved to 0.033); money-calibration check matched expected vs actual late cash at ratio 1.00, then flagged ₹26,587L of ₹32,124L outstanding as expected-late with a customer priority list
-- Validated with walk-forward retro testing across the April 2025 downturn (mean AUC 0.67); documented censoring bias that made naive late-rate estimates understate risk
-- Added SQL layer (SQLite): AR aging buckets, DSO trend, collection-effectiveness queries; explained predictions with SHAP global + per-invoice waterfall
