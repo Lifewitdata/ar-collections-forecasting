@@ -1,0 +1,7 @@
+model,task,accuracy,macro_F1,weighted_F1,ROC_AUC,PR_AUC,MAE,RMSE
+majority,risk_band,0.532,0.1736,0.3695,,,,
+mean_rate,is_late,0.732,,,0.5,0.732,,
+mean,days_to_pay,,,,,,19.49,24.88
+segment_mode,risk_band,0.532,0.1736,0.3695,,,,
+segment_P_late,is_late,0.732,,,0.524,0.7384,,
+segment_mean,days_to_pay,,,,,,16.05,20.75
